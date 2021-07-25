@@ -1,4 +1,4 @@
-import {phrases} from "./phrases.js"
+import {phrases} from "./hackerspeak.js"
 
 export const generate = (count = 10) => {
 
