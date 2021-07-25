@@ -1,11 +1,11 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { generate } from './utils/words';
 import useKeyPress from './hooks/useKeyPress';
 import {randoms} from "./utils/randoms"
 
 const initialWords = generate();
-const randomPhrases = randoms()
+let randomPhrases = randoms()
 //console.log(initialWords);
 
 function App() {
