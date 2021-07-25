@@ -50,15 +50,16 @@ function App() {
         <p>
           {randomPhrases}
         </p>
-        
-        <p className="Character">
+      </header>
+      <body className="App-body">
+      <p className="Character">
           <span className="Character-out">
             {(leftPadding + outgoingChars).slice(-20)}
           </span>
           <span className="Character-current">{currentChar}</span>
           <span>{incomingChars.substr(0, 20)}</span>
         </p>
-      </header>
+      </body>
     </div>
   );
 }

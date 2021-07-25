@@ -1,6 +1,13 @@
 .App {
   text-align: center;
   font-family: monospace;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
 }
 
 .App-logo {
@@ -15,18 +22,16 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
+.App-body {
+  color:#36a832;
+  font-family: monospace;
+}
+
 .App-link {
-  color: #61dafb;
+  color: white;
 }
 
 @keyframes App-logo-spin {
@@ -43,7 +48,7 @@
 }
 
 .Character-current {
-  background-color: #09d3ac;
+  background-color: white;
 }
 
 .Character-out {
