@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { generate } from './utils/words';
 
 const initialWords = generate();
-console.log(initialWords);
+//console.log(initialWords);
 
 function App() {
   return (
