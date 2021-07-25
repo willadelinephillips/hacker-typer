@@ -3,8 +3,10 @@ import './App.css';
 import React, { useState } from 'react';
 import { generate } from './utils/words';
 import useKeyPress from './hooks/useKeyPress';
+import {randoms} from "./utils/randoms"
 
 const initialWords = generate();
+const randomPhrases = randoms()
 //console.log(initialWords);
 
 function App() {
@@ -47,7 +49,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          Hacking into the Database...
+          {randomPhrases}
         </p>
         
         <p className="Character">
@@ -57,7 +59,7 @@ function App() {
           <span className="Character-current">{currentChar}</span>
           <span>{incomingChars.substr(0, 20)}</span>
         </p>
-        
+
         <img src={logo} className="App-logo" alt="logo" />
         <a
           className="App-link"
