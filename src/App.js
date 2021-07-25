@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
 import { generate } from './utils/words';
@@ -59,16 +58,6 @@ function App() {
           <span className="Character-current">{currentChar}</span>
           <span>{incomingChars.substr(0, 20)}</span>
         </p>
-
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          The React Link
-        </a>
       </header>
     </div>
   );
