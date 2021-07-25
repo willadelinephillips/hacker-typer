@@ -18,7 +18,7 @@ export const phrases = () => {
   return hackertitles[Math.floor(Math.random() * hackertitles.length)];
 }
 
-const IntervalExample = () => {
+const TitlePhrase = () => {
   const [oldPhrase, setSeconds] = useState(phrases());
 
   useEffect(() => {
@@ -37,4 +37,4 @@ const IntervalExample = () => {
   );
 };
 
-export {IntervalExample};
+export {TitlePhrase};

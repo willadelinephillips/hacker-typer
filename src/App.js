@@ -2,10 +2,10 @@ import './App.css';
 import React, { useState } from 'react';
 import { generate } from './utils/words';
 import useKeyPress from './hooks/useKeyPress';
-import {IntervalExample} from "./components/phrases"
+import {TitlePhrase} from "./components/phrases"
 
 const initialWords = generate();
-const intervalExample = <IntervalExample />;
+const titlePhrase = <TitlePhrase />;
 //console.log(initialWords);
 
 function App() {
@@ -48,7 +48,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-        {intervalExample}
+        {titlePhrase}
         </p>
       </header>
       <body className="App-body">
