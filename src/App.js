@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
+import { generate } from './utils/words';
+
+const initialWords = generate();
+console.log(initialWords);
 
 function App() {
   return (
