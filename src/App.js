@@ -2,8 +2,10 @@ import './App.css';
 import React, { useState } from 'react';
 import { generate } from './utils/words';
 import useKeyPress from './hooks/useKeyPress';
-import {TitlePhrase} from "./components/phrases"
-
+import {TitlePhrase} from "./components/phrases";
+import {ProgressionBar} from "./components/progressionBar";
+ 
+const progressBar = <ProgressionBar />;
 const initialWords = generate();
 const titlePhrase = <TitlePhrase />;
 //console.log(initialWords);
@@ -48,7 +50,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-        {titlePhrase}
+          {titlePhrase}
+        </p>
+        <p>
+          {progressBar}
         </p>
       </header>
       <body className="App-body">

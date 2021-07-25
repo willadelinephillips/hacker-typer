@@ -29,11 +29,9 @@ const TitlePhrase = () => {
   }, []);
 
   return (
-    <header className="App-header">
     <p>
-      {oldPhrase}
+    {oldPhrase}
     </p>
-  </header>
   );
 };
 
