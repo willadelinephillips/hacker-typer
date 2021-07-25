@@ -3,9 +3,11 @@ import React, { useState, useEffect } from 'react';
 import { generate } from './utils/words';
 import useKeyPress from './hooks/useKeyPress';
 import {randoms} from "./utils/randoms"
+import {IntervalExample} from "./components/test"
 
 const initialWords = generate();
 let randomPhrases = randoms()
+const intervalExample = <IntervalExample />;
 //console.log(initialWords);
 
 function App() {
@@ -58,6 +60,9 @@ function App() {
           </span>
           <span className="Character-current">{currentChar}</span>
           <span>{incomingChars.substr(0, 20)}</span>
+        </p>
+        <p className="counter">
+        {intervalExample}
         </p>
       </body>
     </div>
