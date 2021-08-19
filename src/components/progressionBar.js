@@ -3,11 +3,13 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 
 const ProgressionBar = () => {
 
-   const now = 0;
-
+   var now = 0;
+  const addNow = () => {
+    now = now + 1;
+  };
    
 
-  const progressInstance = <ProgressBar now={now} label={`${now}%`} />;
+  const progressInstance = <ProgressBar now={now} label={`${now}%`} onKeyDown="addNow()" tabIndex="0"></ProgressBar>
 
   return (
     <p>
